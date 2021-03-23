@@ -21,7 +21,7 @@
     <script type="text/javascript">
       porscheDesignSystem.load();
     </script>
-    <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
+    <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
     <header class="ks-header">
       <!-- A11y issue: The skip-link target should exist and be focusable (https://dequeuniversity.com/rules/axe/4.1/skip-link) -->
       <a href="#ks-main-content" class="ks-header__skip-link">
@@ -67,13 +67,13 @@
     </header>
     <!-- A11y issue: Ensures the document has at most one main landmark (https://dequeuniversity.com/rules/axe/4.1/landmark-no-duplicate-main) -->
     <main id="ks-main-content">
-      <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
-      <section class="ks-hero">
+      <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
+      <section class="ks-hero" aria-labelledby="ks-headline-hero">
         <p-content-wrapper width="extended">
           <!-- A11y issue: Do not wrap link element around whole card component. Instead make use of the CSS pseudo-content trick (https://inclusive-components.design/cards/#thepseudocontenttrick)-->
           <p-content-wrapper class="ks-hero__text">
             <!-- A11y issue: Page must contain a level-one heading (https://dequeuniversity.com/rules/axe/4.1/page-has-heading-one) -->
-            <p-headline color="inherit" variant="inherit">
+            <p-headline color="inherit" variant="inherit" id="ks-headline-hero">
               <!-- A11y issue: HTML validation error: do not nest <button> inside link <a> -->
               <p-link-pure
                 size="{ base: 'medium', l: 'x-large' }"
@@ -109,11 +109,16 @@
           </figure>
         </p-content-wrapper>
       </section>
-      <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
-      <section class="ks-cards -spacing-mt-72">
+      <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
+      <section
+        class="ks-cards -spacing-mt-72"
+        aria-labelledby="ks-headline-offer-list"
+      >
         <p-content-wrapper>
           <!-- A11y improvement: Every Section should start with a headline -->
-          <p-headline variant="headline-2">Offer list</p-headline>
+          <p-headline variant="headline-2" id="ks-headline-offer-list">
+            Offer list
+          </p-headline>
           <!-- A11y issue: Add more HTML semantic with elements or aria roles (https://developer.mozilla.org/en-US/docs/Web/HTML/Element) -->
           <p-grid role="list" class="-spacing-mt-32">
             <p-grid-item size="{ base: 12, m: 4 }" role="listitem">
@@ -200,13 +205,20 @@
           </p-grid>
         </p-content-wrapper>
       </section>
-      <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
-      <section class="ks-text-content -spacing-mt-72">
+      <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
+      <section
+        class="ks-text-content -spacing-mt-72"
+        aria-labelledby="ks-headline-text-content"
+      >
         <p-content-wrapper>
           <p-grid>
             <p-grid-item size="{ base: 12, m: 5 }">
               <!-- A11y issue: Heading levels should only increase by one (https://dequeuniversity.com/rules/axe/4.1/heading-order) -->
-              <p-headline variant="headline-3" tag="h2">
+              <p-headline
+                variant="headline-3"
+                tag="h2"
+                id="ks-headline-text-content"
+              >
                 Lorem Headline 1
               </p-headline>
               <!-- A11y issue: Characters per line should be between 45 and 75 (https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/) -->
@@ -287,11 +299,16 @@
           </p-grid>
         </p-content-wrapper>
       </section>
-      <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
-      <section class="ks-carousel -spacing-mt-72">
+      <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
+      <section
+        class="ks-carousel -spacing-mt-72"
+        aria-labelledby="ks-headline-carousel"
+      >
         <p-content-wrapper>
           <!-- A11y improvement: Every Section should start with a headline -->
-          <p-headline variant="headline-2">Models</p-headline>
+          <p-headline variant="headline-2" id="ks-headline-carousel">
+            Models
+          </p-headline>
           <div class="splide -spacing-mt-32">
             <div class="splide__arrows">
               <!-- A11y issue: use semantic action elements which have focus and behave like it is intended -->
@@ -384,14 +401,17 @@
           </div>
         </p-content-wrapper>
       </section>
-      <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
-      <section class="ks-contact -spacing-mt-72">
+      <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
+      <section
+        class="ks-contact -spacing-mt-72"
+        aria-labelledby="ks-headline-form"
+      >
         <p-content-wrapper>
           <p-grid class="-spacing-mt-48">
             <p-grid-item size="{ base: 12, m: 6 }">
               <form novalidate action="#">
                 <!-- A11y issue: Heading levels should only increase by one (https://dequeuniversity.com/rules/axe/4.1/heading-order) -->
-                <p-headline variant="headline-3" tag="h2">
+                <p-headline variant="headline-3" tag="h2" id="ks-headline-form">
                   Get in touch
                 </p-headline>
                 <!-- A11y issue: Grouping controls (https://www.w3.org/WAI/tutorials/forms/grouping/) -->
@@ -522,7 +542,7 @@
         </p-content-wrapper>
       </section>
     </main>
-    <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
+    <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
     <footer class="ks-footer">
       <p-content-wrapper width="extended">
         <p-content-wrapper>
@@ -556,7 +576,12 @@
             perMove: 1,
           },
         },
+        // add keyboard support
         keyboard: true,
+        // add general accessibility support
+        accessibility: true,
+        // disable autoplay to prevent timing constraints
+        autoplay: false,
         slideFocus: false,
       }).mount();
     </script>
