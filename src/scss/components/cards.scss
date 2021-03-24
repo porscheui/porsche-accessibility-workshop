@@ -66,10 +66,6 @@
       order: -1;
     }
 
-    &__headline {
-      color: inherit;
-    }
-
     // the CSS pseudo-content trick
     p-link a::after {
       content: "";
