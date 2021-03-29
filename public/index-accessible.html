@@ -504,38 +504,27 @@
                     </p-checkbox-wrapper>
                   </p-flex-item>
                 </p-flex>
-                <p-flex
-                  direction="{ base: 'column', s: 'row' }"
-                  class="ks-form__section-spacing ks-form__bottom-spacing ks-form__grid-item-container"
+                <p-button-group
+                  class="ks-form__section-spacing ks-form__bottom-spacing"
                 >
-                  <p-flex-item
-                    width="{base: 'full', s: 'auto'}"
-                    class="ks-form__grid-item"
+                  <!-- A11y issue: Links/Buttons must have discernible and descriptive text (https://dequeuniversity.com/rules/axe/4.1/link-name) -->
+                  <p-button
+                    type="submit"
+                    class="ks-form__item-width--full ks-form__item-width--auto-s"
+                    id="ks-submit-btn"
                   >
-                    <!-- A11y issue: Links/Buttons must have discernible and descriptive text (https://dequeuniversity.com/rules/axe/4.1/link-name) -->
-                    <p-button
-                      type="submit"
-                      class="ks-form__item-width--full ks-form__item-width--auto-s"
-                      id="ks-submit-btn"
-                    >
-                      Send form
-                    </p-button>
-                  </p-flex-item>
-                  <p-flex-item
-                    width="{base: 'full', s: 'auto'}"
-                    class="ks-form__row-spacing ks-form__row-spacing--zero-s ks-form__grid-item"
+                    Send form
+                  </p-button>
+                  <!-- A11y issue: Links/Buttons must have discernible and descriptive text (https://dequeuniversity.com/rules/axe/4.1/link-name) -->
+                  <p-button
+                    variant="tertiary"
+                    type="reset"
+                    icon="close"
+                    class="ks-form__item-width--full ks-form__item-width--auto-s"
                   >
-                    <!-- A11y issue: Links/Buttons must have discernible and descriptive text (https://dequeuniversity.com/rules/axe/4.1/link-name) -->
-                    <p-button
-                      variant="tertiary"
-                      type="reset"
-                      icon="close"
-                      class="ks-form__item-width--full ks-form__item-width--auto-s"
-                    >
-                      Reset form values
-                    </p-button>
-                  </p-flex-item>
-                </p-flex>
+                    Reset form values
+                  </p-button>
+                </p-button-group>
               </form>
             </p-grid-item>
           </p-grid>

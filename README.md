@@ -64,14 +64,13 @@ Automatic accessibility testing can give you fast results of possible accessibil
 Be aware that the results need to be checked manually and do only **cover up to 50% of possible issues**.
 
 #### Warmup: get 1st impressions
-1. Create new branch `workshop/your-name` from `master` and be sure that the new branch is your **HEAD branch**
 1. Start application in dev mode with `yarn start:watch`.
 1. Open the two example pages in Chrome browser on **http://localhost:5000/index.html** and **http://localhost:5000/index-accessible.html**, compare them visually and by behaviour (e.g. try to navigate by a keyboard) and explore differences.
 
 #### Initial accessibility scan with axe DevTools
 1. Switch to **http://localhost:5000/index.html**, open Chrome DevTools and navigate to **"axe DevTools"** (be sure you have installed the extension!).
 1. Click **"Scan all of my page"**.
-1. **Inspect** all the issues, try to understand what's the meaning and [get familiar with the axe testing tool](https://www.youtube.com/watch?v=dyU9yrRJ5Eg).
+1. **Inspect** all the issues, try to understand what's the meaning and [get familiar with the axe testing tool](https://www.youtube.com/watch?v=wUc4d1Vlxe4).
 
 #### Start fixing issues found by axe DevTools
 1. Open up following HTML file in your preferred editor: `./public/index.html`.
@@ -96,11 +95,3 @@ To help you get through of the most important issues, we created some guidance i
 1. Try to discover the visual and technical differences with the testing tools and manually by yourself.
 1. Open the best practice example **index-accessible.html** in your preferred editor and compare the code with the fixes you made.
 1. Your fixes and improvements should result with only **3 issues left in axe DevTools** which couldn't assessed automatically and do require manually review.
-
-### 4. Learn and discuss
-Due to the fact that there are many possible solutions how to fix accessibility issues, it might be worth to push your state to **Github** and discuss it afterwards with others. 
-**Hint:**: You need access to the Porsche GitHub organization to have the rights to push to the repository!
-
-If you have followed the naming convention while creating a new branch, your application will also be deployed to Github Pages and can be accessed with the following url:  
-- https://porscheui.github.io/porsche-accessibility-workshop/workshop/your-name/
-- https://porscheui.github.io/porsche-accessibility-workshop/workshop/your-name/index-accessible.html
