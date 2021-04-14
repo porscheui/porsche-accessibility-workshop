@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@porsche-design-system/assets": "^3.1.0",
-    "@porsche-design-system/components-js": "2.0.0-rc.9"
+    "@porsche-design-system/components-js": "^2.0.0"
   },
   "devDependencies": {
     "@porsche-design-system/utilities": "^4.0.0",
