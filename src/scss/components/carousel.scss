@@ -37,32 +37,9 @@
       margin-right: -$p-spacing-48;
     }
 
-    &__list {
-      flex-wrap: nowrap;
-      flex: auto !important;
-      width: auto !important;
-      margin-left: -0.5rem !important;
-      margin-right: -0.5rem !important;
-
-      @media (min-width: 1000px) {
-        margin-left: -1.125rem !important;
-        margin-right: -1.125rem !important;
-      }
-    }
-
     &__slide {
       padding-bottom: $p-spacing-8;
       text-align: center;
-      width: 100% !important;
-
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-
-      @media (min-width: 1000px) {
-        padding-left: 1.125rem !important;
-        padding-right: 1.125rem !important;
-        width: 33.333333% !important;
-      }
     }
 
     &__pagination {
@@ -93,11 +70,6 @@
 .ks-accessible {
   .ks-carousel {
     .splide {
-      &__slide {
-        position: relative;
-        transform: translate3d(0, 0, 0); // add new context for fixed
-      }
-
       &__pagination {
         &__page {
           cursor: pointer;

@@ -335,8 +335,8 @@
               </p-button-pure>
             </div>
             <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
+              <p-grid wrap="nowrap" class="splide__list">
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <!-- A11y issue: Images must have alternate text (https://dequeuniversity.com/rules/axe/4.1/image-alt) -->
                   <img
                     src="./assets/Cayenne.jpg"
@@ -346,8 +346,8 @@
                   <p-link variant="tertiary">
                     <a href="#">Cayenne Models</a>
                   </p-link>
-                </li>
-                <li class="splide__slide">
+                </p-grid-item>
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <img
                     src="./assets/Macan.jpg"
                     alt="Porsche Macan in silver from the side"
@@ -357,8 +357,8 @@
                   <p-link variant="tertiary">
                     <a href="#">Macan Models</a>
                   </p-link>
-                </li>
-                <li class="splide__slide">
+                </p-grid-item>
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <img
                     src="./assets/Panamera.jpg"
                     alt="Porsche Panamera in silver from the side"
@@ -367,8 +367,8 @@
                   <p-link variant="tertiary">
                     <a href="#">Panamera Models</a>
                   </p-link>
-                </li>
-                <li class="splide__slide">
+                </p-grid-item>
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <img
                     src="./assets/Taycan.jpg"
                     alt="Porsche Taycan in silver from the side"
@@ -377,8 +377,8 @@
                   <p-link variant="tertiary">
                     <a href="#">Taycan Models</a>
                   </p-link>
-                </li>
-                <li class="splide__slide">
+                </p-grid-item>
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <img
                     src="./assets/718.jpg"
                     alt="Porsche 718 Cayman in silver from the side"
@@ -387,8 +387,8 @@
                   <p-link variant="tertiary">
                     <a href="#">718 Models</a>
                   </p-link>
-                </li>
-                <li class="splide__slide">
+                </p-grid-item>
+                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
                   <img
                     src="./assets/911.jpg"
                     alt="Porsche 911 Carrera in silver from the side"
@@ -397,8 +397,8 @@
                   <p-link variant="tertiary">
                     <a href="#">911 Models</a>
                   </p-link>
-                </li>
-              </ul>
+                </p-grid-item>
+              </p-grid>
             </div>
           </div>
         </p-content-wrapper>
@@ -561,10 +561,22 @@
       new Splide(".splide", {
         perPage: 3,
         perMove: 3,
+        width: "100%",
+        fixedWidth: "33.3333%",
+        padding: {
+          left: "1.125rem",
+          right: "1.125rem",
+        },
         breakpoints: {
           1000: {
             perPage: 1,
             perMove: 1,
+            width: "100%",
+            fixedWidth: "100%",
+            padding: {
+              left: "0.75rem",
+              right: "0.75rem",
+            },
           },
         },
         // add keyboard support
