@@ -109,9 +109,23 @@
         padding: $p-spacing-8 $p-spacing-24;
         margin: 0;
 
-        &:hover,
-        &[aria-current] {
+        &:hover {
           color: $p-color-state-hover;
+        }
+
+        &[aria-current] {
+          color: $p-color-state-active;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: $p-spacing-16;
+            right: $p-spacing-16;
+            height: 3px;
+            background-color: $p-color-state-active;
+          }
         }
 
         &:focus {
