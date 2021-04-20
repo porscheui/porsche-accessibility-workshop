@@ -8,9 +8,9 @@
   integrity sha1-UGovNUngumabI+ZTYMCJUlYhAGc=
 
 "@porsche-design-system/components-js@^2.0.0":
-  version "2.0.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0.tgz#facc03082f2b68edf08f13f392d1102f3e9a5327"
-  integrity sha1-+swDCC8raO3wjxPzktEQLz6aUyc=
+  version "2.0.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.1.tgz#c05bec281b4061d6777030de22c9af1f2a1d587f"
+  integrity sha1-wFvsKBtAYdZ3cDDeIsmvHyodWH8=
 
 "@porsche-design-system/utilities@^4.0.0":
   version "4.0.0"
@@ -32,9 +32,9 @@
     defer-to-connect "^1.0.1"
 
 "@types/node@^14.14.31":
-  version "14.14.37"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.37.tgz#a3dd8da4eb84a996c36e331df98d82abd76b516e"
-  integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
+  version "14.14.41"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
+  integrity sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
 
 "@zeit/schemas@2.6.0":
   version "2.6.0"
