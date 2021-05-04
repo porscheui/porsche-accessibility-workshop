@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- A11y issue: <html> element must have a lang attribute (https://dequeuniversity.com/rules/axe/4.1/html-has-lang) -->
+<!-- A11y issue (AXE): <html> element must have a lang attribute (https://dequeuniversity.com/rules/axe/4.1/html-has-lang) -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- A11y issue: Documents must contain a descriptive title element to aid in navigation (https://dequeuniversity.com/rules/axe/4.1/document-title) -->
     <title>Porsche Accessibility Workshop - Result Page</title>
-    <!-- A11y issue: Zooming and scaling must not be disabled (https://dequeuniversity.com/rules/axe/4.1/meta-viewport) -->
+    <!-- A11y issue (AXE): Zooming and scaling must not be disabled (https://dequeuniversity.com/rules/axe/4.1/meta-viewport) -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_INITIAL_STYLES-->
@@ -22,9 +22,9 @@
       porscheDesignSystem.load();
     </script>
     <!-- Section: header -->
-    <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
+    <!-- A11y issue: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) -->
     <header class="ks-header">
-      <!-- A11y issue: The skip-link target should exist and be focusable (https://dequeuniversity.com/rules/axe/4.1/skip-link) -->
+      <!-- A11y improvement: The skip-link target should exist and be focusable (https://dequeuniversity.com/rules/axe/4.1/skip-link) -->
       <a href="#ks-main-content" class="ks-header__skip-link">
         <p-link>Skip to Content</p-link>
       </a>
@@ -68,7 +68,7 @@
         </p-flex>
       </p-content-wrapper>
     </header>
-    <!-- A11y issue: Ensures the document has at most one main landmark (https://dequeuniversity.com/rules/axe/4.1/landmark-no-duplicate-main) -->
+    <!-- A11y issue (AXE): Ensures the document has at most one main landmark (https://dequeuniversity.com/rules/axe/4.1/landmark-no-duplicate-main) -->
     <main id="ks-main-content">
       <!-- Section: hero -->
       <!-- A11y improvement: Use HTML sectioning elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) and provide textual context (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role) -->
@@ -340,8 +340,12 @@
               </p-button-pure>
             </div>
             <div class="splide__track">
-              <p-grid wrap="nowrap" class="splide__list">
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+              <p-grid wrap="nowrap" class="splide__list" role="list">
+                <p-grid-item
+                  size="{ base: 12, m: 4 }"
+                  role="list-item"
+                  class="splide__slide"
+                >
                   <!-- A11y issue: Images must have alternate text (https://dequeuniversity.com/rules/axe/4.1/image-alt) -->
                   <img
                     src="./assets/Cayenne.jpg"
@@ -352,7 +356,7 @@
                     <a href="#">Cayenne Models</a>
                   </p-link>
                 </p-grid-item>
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+                <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
                   <img
                     src="./assets/Macan.jpg"
                     alt="Porsche Macan in silver from the side"
@@ -363,7 +367,7 @@
                     <a href="#">Macan Models</a>
                   </p-link>
                 </p-grid-item>
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+                <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
                   <img
                     src="./assets/Panamera.jpg"
                     alt="Porsche Panamera in silver from the side"
@@ -373,7 +377,7 @@
                     <a href="#">Panamera Models</a>
                   </p-link>
                 </p-grid-item>
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+                <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
                   <img
                     src="./assets/Taycan.jpg"
                     alt="Porsche Taycan in silver from the side"
@@ -383,7 +387,7 @@
                     <a href="#">Taycan Models</a>
                   </p-link>
                 </p-grid-item>
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+                <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
                   <img
                     src="./assets/718.jpg"
                     alt="Porsche 718 Cayman in silver from the side"
@@ -393,7 +397,7 @@
                     <a href="#">718 Models</a>
                   </p-link>
                 </p-grid-item>
-                <p-grid-item size="{ base: 12, m: 4 }" li class="splide__slide">
+                <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
                   <img
                     src="./assets/911.jpg"
                     alt="Porsche 911 Carrera in silver from the side"

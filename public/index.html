@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- A11y issue: -->
     <title>Test</title>
+    <!-- A11y issue: -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
@@ -22,17 +24,22 @@
       porscheDesignSystem.load();
     </script>
     <!-- Section: header -->
+    <!-- A11y issue: -->
     <div class="ks-header">
       <p-content-wrapper>
         <p-flex align-items="flex-end">
           <p-flex-item>
+            <!-- A11y issue: -->
             <p-marque href="#" class="ks-header__marque"></p-marque>
           </p-flex-item>
           <p-flex-item>
             <div class="ks-header__nav-toggle">
+              <!-- A11y issue: -->
               <p-icon name="menu-lines" id="ks-header__nav-toggle"></p-icon>
             </div>
+            <!-- A11y issue: -->
             <div class="ks-header__nav" id="ks-header__nav">
+              <!-- A11y issue: -->
               <a href="#">Models</a>
               <a href="#">Services</a>
               <a href="#">Experiences</a>
@@ -44,32 +51,41 @@
       </p-content-wrapper>
     </div>
     <!-- Section: hero -->
+    <!-- A11y issue: -->
     <div class="ks-hero">
       <p-content-wrapper width="extended">
+        <!-- A11y issue: -->
         <a href="#">
           <p-content-wrapper class="ks-hero__text">
+            <!-- A11y issue: -->
             <p-button-pure size="x-large" weight="thin" theme="dark">
               Moments of Excitement
               <p slot="subline">Discover the Porsche Ice Experience.</p>
             </p-button-pure>
           </p-content-wrapper>
           <div class="ks-hero__mood">
+            <!-- A11y issue: -->
             <img src="./assets/porsche-911-winter-road-2.jpg" />
           </div>
         </a>
       </p-content-wrapper>
     </div>
     <!-- Section: cards -->
+    <!-- A11y issue: -->
     <div class="ks-cards -spacing-mt-72">
       <p-content-wrapper>
+        <!-- A11y issue: -->
         <p-grid>
           <p-grid-item size="4">
+            <!-- A11y issue: -->
             <a href="#" class="ks-cards__item">
+              <!-- A11y issue: -->
               <img
                 src="./assets/ks-offer-teaser-1.jpg"
                 class="ks-cards__mood"
                 alt="Porsche"
               />
+              <!-- A11y issue: -->
               <p-text
                 weight="thin"
                 size="medium"
@@ -143,10 +159,13 @@
       </p-content-wrapper>
     </div>
     <!-- Section: text content -->
+    <!-- A11y issue: -->
     <div class="ks-text-content -spacing-mt-72">
       <p-content-wrapper>
+        <!-- A11y issue: -->
         <p-headline variant="headline-3">Lorem Headline 1</p-headline>
         <p-text class="-spacing-mt-16">
+          <!-- A11y issue: -->
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr<sup>1</sup>,
           sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
           aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -166,7 +185,9 @@
           eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
           gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p-text>
+        <!-- A11y issue: -->
         <p-button class="-spacing-mt-32">Click here!</p-button>
+        <!-- A11y issue: -->
         <p-text
           size="x-small"
           color="inherit"
@@ -191,10 +212,13 @@
       </p-content-wrapper>
     </div>
     <!-- Section: carousel -->
+    <!-- A11y issue: -->
     <div class="ks-carousel -spacing-mt-72">
       <p-content-wrapper>
+        <!-- A11y issue: -->
         <div class="splide">
           <div class="splide__arrows">
+            <!-- A11y issue: -->
             <div class="splide__arrow splide__arrow--prev">
               <p-icon name="arrow-head-left" size="large"></p-icon>
             </div>
@@ -205,11 +229,13 @@
           <div class="splide__track">
             <p-grid wrap="nowrap" class="splide__list">
               <p-grid-item size="{ base: 12, m: 4 }" class="splide__slide">
+                <!-- A11y issue: -->
                 <img
                   src="./assets/Cayenne.jpg"
                   alt="Porsche"
                   class="ks-carousel__mood"
                 />
+                <!-- A11y issue: -->
                 <p-link variant="tertiary">
                   <a href="#">Models</a>
                 </p-link>
@@ -270,12 +296,15 @@
       </p-content-wrapper>
     </div>
     <!-- Section: form -->
+    <!-- A11y issue: -->
     <div class="ks-contact -spacing-mt-72">
       <p-content-wrapper>
+        <!-- A11y issue: -->
         <p-headline variant="headline-3">Get in touch</p-headline>
         <form novalidate action="#">
           <p-grid>
             <p-grid-item size="{ base: 12, m: 6 }">
+              <!-- A11y issue: -->
               <p-flex
                 class="ks-form__grid-item-container ks-form__row-spacing -spacing-mt-28"
               >
@@ -283,6 +312,7 @@
                   width="{base: 'full', m: 'half'}"
                   class="ks-form__grid-item"
                 >
+                  <!-- A11y issue: -->
                   <p-select-wrapper>
                     <select name="category" required>
                       <option value selected disabled>Choose Category</option>
@@ -318,6 +348,7 @@
               <p-button-group
                 class="ks-form__section-spacing ks-form__bottom-spacing"
               >
+                <!-- A11y issue: -->
                 <p-button
                   variant="tertiary"
                   type="reset"
@@ -325,9 +356,11 @@
                   icon="close"
                 >
                 </p-button>
+                <!-- A11y issue: -->
                 <p-button type="submit" id="ks-submit-btn"> OK </p-button>
               </p-button-group>
             </p-grid-item>
+            <!-- A11y issue: -->
             <p-grid-item size="{ base: 12, m: 6 }">
               <p-flex
                 direction="{ base: 'column', m: 'row' }"
@@ -358,6 +391,7 @@
                     size="x-small"
                     class="ks-tooltip"
                   ></p-icon>
+                  <!-- A11y issue: -->
                   <span class="ks-tooltip__tip">
                     <p-text size="x-small">
                       Your email address should have the following format:
@@ -373,13 +407,16 @@
       </p-content-wrapper>
     </div>
     <!-- Section: footer -->
+    <!-- A11y issue: -->
     <div class="ks-footer">
       <p-content-wrapper width="extended">
         <p-content-wrapper>
+          <!-- A11y issue: -->
           <p-headline variant="headline-4" theme="dark">
             Lorem ipsum
           </p-headline>
           <div class="ks-footer__meta">
+            <!-- A11y issue: -->
             <p-text color="inherit" size="x-small" class="-spacing-mt-24">
               © 2021 Porsche Inter Auto CZ spol. s r.o - Testing Extra Long
               Copyright Text Home Page link Testing special characters Cookie
@@ -412,6 +449,7 @@
             },
           },
         },
+        // A11y issue:
         accessibility: false,
         keyboard: false,
         slideFocus: false,
