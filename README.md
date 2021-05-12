@@ -19,6 +19,7 @@ See also the [deployed project](https://porscheui.github.io/porsche-accessibilit
 ### Setup
 1. Clone [porsche-accessibility-workshop repository](https://github.com/porscheui/porsche-accessibility-workshop) 
 1. Switch to **project root directory**
+1. If you already have access to one of the Porsche NPM Registries, open `.npmrc` and add your credentials. Otherwise go on with step 3:
 1. Execute command `npm login --registry=https://porscheui.jfrog.io/porscheui/api/npm/npm/`
 1. Enter username, password (Artifactory API Key, not Artifactory password!) and e-mail address when asked in terminal
 
